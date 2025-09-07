@@ -1,0 +1,1007 @@
+/************ Imported Font ************/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/************ Custom Font ************/
+
+@font-face {
+    font-family: Outfit-Regular;
+    src: url('assets/fonts/outfit/Outfit-Regular.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Outfit-Bold;
+    src: url('assets/fonts/outfit/Outfit-Bold.ttf');
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url('assets/fonts/roboto/Roboto-Regular.ttf');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Roboto-Semi;
+    src: url('assets/fonts/roboto/Roboto-Medium.ttf');
+    font-weight: 100;
+}
+
+/************ Css variables ************/
+
+:root {
+    /* --darkBlueClr: #056b13;
+    --purpleClr: #16e94b;
+    --skyBlueClr: #90e697;
+    --lightDarkBlueClr: #246f35c7;
+    --blackClr: #000000;
+    --whiteClr: #ffffff; */
+    
+    --darkBlueClr: #000235;
+    --purpleClr: #5C5CCF;
+    --skyBlueClr: #AAD9D9;
+    --lightDarkBlueClr: #28225C;
+    --whiteClr: #fff;
+    --blackClr: #000000;
+}
+
+/************ Default Css ************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    /* background-color: var(--darkBlueClr); */
+}
+
+.container {
+    width: 100%;
+    background-image: url('../src/assets/img/main_bg_clean.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-color: #ffffffd2;
+    overflow: hidden;
+}
+
+/************ Navbar Css ************/
+
+.navbar {
+    width: auto;
+    height: 10%;
+    margin: 0 auto;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-section .logo-icon {
+    width: 3rem;
+    margin-right: 1.1rem;
+    transform: rotate(12deg);
+}
+
+.navbar .logo-section .logo-name {
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.navbar .logo-name .purple-name {
+    color: var(--purpleClr);
+}
+
+.navbar .links-section {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navbar .links-section li {
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 0 1.7rem;
+}
+
+.navbar .links-section li a {
+    color: var(--whiteClr);
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+.navbar .links-section li a:hover {
+    color: var(--purpleClr);
+}
+
+/************ Home Css ************/
+
+.home {
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 40px;
+    margin-bottom: 10rem;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .left {
+    position: relative;
+    width: 10%;
+}
+
+.home .left img {
+    position: absolute;
+    left: 5rem;
+    border-radius: 10px;
+    width: 7.5rem;
+    transform: rotate(-20deg);
+    background-position: cover;
+    box-shadow: -7px 10px 20px var(--purpleClr);
+}
+
+.home .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.home .center .title {
+    color: var(--whiteClr);
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+    margin-bottom: 1.4rem;
+}
+
+.home .center .para {
+    width: 70%;
+    margin: 0 auto;
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home .center .select-btn {
+    width: auto;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background-color: var(--purpleClr);
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--whiteClr);
+}
+
+.home .center .select-btn .plus {
+    color: var(--whiteClr);
+    margin-right: .3rem;
+}
+
+.home .right {
+    position: relative;
+    width: 10%;
+}
+
+.home .right img {
+    position: absolute;
+    left: -5rem;
+    top: -8rem;
+    border-radius: 10px;
+    width: 8.5rem;
+    transform: rotate(20deg);
+    background-position: cover;
+    box-shadow: -7px 10px 20px #aad9d996;
+}
+
+/************ Process Css ************/
+
+.process {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 4rem 10%;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: var(--whiteClr);
+}
+
+.process .process-img {
+    width: 45%;
+    height: 100%;
+    margin-right: 2.55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.process .process-img img {
+    width: 100%;
+    height: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 21px;
+    box-shadow: -2px 5px 21px 0px #aad9d994;
+}
+
+.process .process-img .video-label {
+    position: absolute;
+    left: 52%;
+    top: 42%;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    /* border: 2px solid var(--blackClr); */
+    background-color: var(--purpleClr);
+    color: var(--whiteClr);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-left: .2rem;
+    cursor: pointer;
+    z-index: 69;
+    box-shadow: -2px 5px 21px 0px #00000075;
+    transition: .3 ease-in;
+}
+
+.process .process-img .video-label:active {
+    transform: scale(98%);
+}
+
+.process .process-img .audio-label {
+    position: absolute;
+    left: 17%;
+    top: 42%;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    /* border: 2px solid var(--blackClr); */
+    background-color: var(--purpleClr);
+    color: var(--whiteClr);
+    padding: 1rem;
+    border-radius: 10px;
+    margin-right: .2rem;
+    cursor: pointer;
+    z-index: 69;
+    box-shadow: -2px 5px 21px 0px #00000075;
+    transition: .3 ease-in;
+}
+
+.process .process-img .audio-label:active {
+    transform: scale(98%);
+}
+
+.process .process-desc {
+    width: 45%;
+    margin-left: 2.5%;
+    color: var(--whiteClr);
+}
+
+.process .process-desc .small-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--skyBlueClr);
+    font-size: 1em;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+.process .process-desc .title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--whiteClr);
+    font-size: 2em;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.process .process-desc .duration {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--whiteClr);
+    margin-bottom: 1rem;
+}
+
+.process .process-desc .para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--whiteClr);
+    margin-bottom: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.process .process-desc .para .output{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.process .process-desc .action-btns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.process .process-desc .action-btns .predict-btn {
+    width: 12rem;
+    border: none;
+    outline: none;
+    border: 2px solid var(--purpleClr);
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 13px;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--whiteClr);
+    margin-right: 1rem;
+    transition: .1 ease-in;
+}
+
+.process .process-desc .action-btns .predict-btn:active {
+    transform: scale(0.98);
+}
+
+.process .process-desc .action-btns .delete-btn {
+    width: 12rem;
+    border: none;
+    outline: none;
+    border: 2px solid var(--skyBlueClr);
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 13px;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--whiteClr);
+    transition: .1 ease-in;
+}
+
+.process .process-desc .action-btns .delete-btn:active {
+    transform: scale(0.98);
+}
+
+.process .card {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    padding: 2rem 3.3rem 2rem 3.9rem;
+    text-align: center;
+    z-index: 99;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.process .card::after {
+    content: '';
+    position: absolute;
+    background-color: var(--darkBlueClr);
+    left: -1.9rem;
+    top: 15%;
+    width: 3.7rem;
+    height: 3.7rem;
+    transform: rotate(45deg);
+}
+
+.process .card.alert {
+    background-color: red;
+}
+
+.process .card.success {
+    background-color: rgb(3, 182, 3);
+}
+
+.slide-in {
+    transform: translateX(0);
+}
+
+.slide-out {
+    transform: translateX(100%);
+}
+
+/************ About Css ************/
+
+.about {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    padding: 4rem 10%;
+    padding-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .about-img {
+    width: 50%;
+    background-size: contain;
+    margin-right: 10%;
+}
+
+.about .about-img img {
+    width: 30rem;
+    background-size: contain;
+    margin-right: 10%;
+}
+
+.about .about-desc .title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--whiteClr);
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.about .about-desc .para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--whiteClr);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+
+/************ Description Css ************/
+
+.description {
+    width: 100%;
+    height: auto;
+    padding: 4rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description .description-img {
+    width: 45%;
+    margin-right: 5%;
+    background-size: contain;
+    text-align: end;
+}
+
+.description .description-img img {
+    width: 34rem;
+    background-size: contain;
+}
+
+.description .description-desc {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.description .description-desc .title {
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--whiteClr);
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.description .description-desc .para {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--whiteClr);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+
+/************ Steps Css ************/
+
+.steps {
+    width: 80%;
+    margin: 0 auto 3rem;
+    color: var(--whiteClr);
+    padding-top: 2.5rem;
+}
+
+.steps .header {
+    text-align: center;
+    margin-bottom: 6.1rem;
+}
+
+.steps .header .small-title {
+    color: var(--skyBlueClr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.steps .header .title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 3.1rem;
+    text-transform: capitalize;
+}
+
+.steps .body {
+    background: transparent;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.steps .body .card {
+    flex-basis: 100%;
+    background: var(--lightDarkBlueClr);
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: -2px 5px 21px 0px #ffffff33;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.steps .body .card:hover {
+    transform: translateY(-10px);
+}
+
+.steps .body .card .card-header {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3.4rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purpleClr);
+    border-radius: 50%;
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.steps .body .card .card-body .card-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 1rem;
+    overflow: hidden;
+    color: var(--whiteClr);
+}
+
+.steps .body .card .card-body .card-desc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 0 2.9rem;
+    margin: 0 auto;
+    line-height: 1.3rem;
+    overflow: hidden;
+    color: var(--whiteClr);
+}
+
+.steps .steps-footer {
+    width: 100%;
+    margin-top: 4.7rem;
+    text-align: center;
+}
+
+.steps .steps-footer .try-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--skyBlueClr) 0%, var(--skyBlueClr) 30%, var(--purpleClr) 60%);
+    color: var(--blackClr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 13px;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+.steps .steps-footer .try-btn:active {
+    transform: scale(98%);
+}
+
+/************ Footer Css ************/
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4.5rem 10%;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, #000 100%);
+    color: var(--whiteClr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+.footer .logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo-section .logo-icon {
+    color: var(--whiteClr);
+    width: 3rem;
+    margin-right: 1.1rem;
+    transform: rotate(12deg);
+}
+
+.footer .logo-section .logo-name {
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.footer .logo-name .purple-name {
+    color: var(--purpleClr);
+}
+
+/************ Scroll Btn Css ************/
+
+.scroll-btn {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, var(--purpleClr) 10%, var(--skyBlueClr) 100%);
+    color: var(--whiteClr);
+    font-size: 1.3rem;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-btn.visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.scroll-btn.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/************ reusable Css ************/
+
+.d-none {
+    display: none;
+}
+
+/************ responsive Css ************/
+
+@media (max-width: 1285px) {
+    .process .process-img .video-label {
+        left: 34%;
+        top: 33%;
+        transition: .1s ease-in;
+    }
+    
+    .process .process-img .audio-label {
+        left: 33.5%;
+        top: 53%;
+        transition: .1s ease-in;
+    }
+}
+
+@media (max-width: 1146px){
+    
+    .home .left img {
+        left: 4rem;
+        transition: .1s ease-in;
+    }
+    
+}
+
+@media (max-width: 1013px){
+    
+    .home .left img {
+        display: none;
+        transition: .1s ease-in;
+    }
+
+    .home .right img {
+        display: none;
+        transition: .1s ease-in;
+    }
+    .process .process-img .video-label {
+        left: 30%;
+        top: 33%;
+        transition: .1s ease-in;
+    }
+    
+    .process .process-img .audio-label {
+        left: 29.5%;
+        top: 53%;
+        transition: .1s ease-in;
+    }
+    
+}
+
+@media (max-width: 916px){
+
+    .process {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .process .process-img {
+        width: 55%;
+        margin-bottom: 3rem;
+    }
+
+    .process .process-img .video-label {
+        left: 31%;
+        top: 33%;
+        transition: .1s ease-in;
+    }
+    
+    .process .process-img .audio-label {
+        left: 30.5%;
+        top: 53%;
+        transition: .1s ease-in;
+    }
+
+    .process .process-desc {
+        width: 58%;
+        margin-left: 0;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .about .about-img {
+        width: 100%;
+        margin: 0 0 3rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about .about-img img {
+        margin-right: 0;
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .description .description-desc {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .description .description-img {
+        width: 100%;
+        text-align: center;
+    }
+
+    .description .description-img img{
+        text-align: center;
+    }
+
+    .steps .body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .steps .body .card {
+        width: 45%;
+        margin-bottom: 5rem;
+        transition: all .3s ease-in;
+    }
+
+    .steps .body .card:last-child {
+        margin-bottom: 0;
+    }
+
+    .steps .body .card .card-body .card-desc {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 804px){
+    .navbar .links-section {
+        display: none;
+        position: relative;
+    }
+}
+
+@media (max-width: 732px){
+    
+    .process .process-img {
+        width: 60%;
+        margin-bottom: 3rem;
+    }
+
+    .process .process-img .video-label {
+        left: 29%;
+        top: 33%;
+        transition: .1s ease-in;
+    }
+    
+    .process .process-img .audio-label {
+        left: 28.5%;
+        top: 53%;
+        transition: .1s ease-in;
+    }
+
+    .process .process-desc {
+        width: 63%;
+    }
+
+    .footer .rights {
+        display: none;
+    }
+}
+
+@media (max-width: 669px){
+    
+    .process .process-img {
+        width: 70%;
+        margin-bottom: 3rem;
+    }
+
+    .process .process-img .video-label {
+        left: 29%;
+    }
+    
+    .process .process-img .audio-label {
+        left: 28.5%;
+    }
+
+    .process .process-desc {
+        width: 72%;
+    }
+
+    .steps .body .card {
+        width: 62%;
+    }
+
+    .steps .body .card .card-body .card-desc {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 609px){
+    .home .center .title {
+        font-weight: 700;
+        font-size: 2.8rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media (max-width: 519px){
+
+    .home .center .title {
+        font-size: 2.8rem;
+    }
+
+    .home .center .para {
+        width: 80%;
+    }
+
+    .process .process-img .video-label {
+        left: 25%;
+    }
+    
+    .process .process-img .audio-label {
+        left: 24.5%;
+    }
+
+    .about .about-img img {
+        width: 26rem;
+    }
+
+    .description .description-img img {
+        width: 26rem;
+    }
+
+    .steps .body .card {
+        width: 69%;
+    }
+}
+
+@media (max-width: 489px){
+
+    .home .center .title {
+        font-size: 2.5rem;
+    }
+
+    .home .center .para {
+        width: 80%;
+    }
+
+    .process .process-img {
+        width: 80%;
+    }
+
+    .process .process-desc {
+        width: 82%;
+    }
+    
+    .steps .body .card .card-body .card-desc {
+        padding: 0 2.4rem;
+    }
+}
