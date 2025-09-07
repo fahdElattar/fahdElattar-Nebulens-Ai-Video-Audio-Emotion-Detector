@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import square_bg from '../assets/img/gray_white_bg.jpg';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const Process = () => {
@@ -150,7 +149,7 @@ const Process = () => {
         <input type='file' accept='audio/*' className='d-none' id='audioFile' onChange={handleAudioChange} />
         <label htmlFor="audioFile" className='audio-label'>Select an audio</label>
 
-        <img src={square_bg} alt="Background" />
+        {/* <img src={square_bg} alt="Background" /> */}
         
       </div>
       <div className="process-desc">
