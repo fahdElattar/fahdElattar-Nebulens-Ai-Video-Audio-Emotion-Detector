@@ -169,6 +169,7 @@ body {
     font-size: 3.3rem;
     margin-bottom: 1.4rem;
     text-wrap: nowrap;
+    white-space: nowrap;
 }
 
 .home .center .para {
