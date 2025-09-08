@@ -141,7 +141,7 @@ const Process = () => {
       <div className={`card success ${success ? 'slide-in' : 'slide-out'}`}>
         Your prediction is received successfully!!
       </div>
-      <div className="process-img">
+      <div className="process-img" id='process-img'>
 
         <input type='file' accept='video/*' className='d-none' id='videoFile' onChange={handleVideoChange} />
         <label htmlFor="videoFile" className='video-label'>Select a video</label>
