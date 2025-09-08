@@ -1,5 +1,5 @@
-import React from 'react'
-import galaxy_icon from '../assets/img/galaxy_icon.svg'
+import galaxy_icon from '../../assets/img/galaxy_icon.svg'
+import "./Footer.css"
 
 const Footer = () => {
   return (

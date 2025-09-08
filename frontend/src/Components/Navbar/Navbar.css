@@ -1,0 +1,57 @@
+/************ Navbar Css ************/
+
+.navbar {
+    width: auto;
+    height: 10%;
+    margin: 0 auto;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo-section .logo-icon {
+    width: 3rem;
+    margin-right: 1.1rem;
+    transform: rotate(12deg);
+}
+
+.navbar .logo-section .logo-name {
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.navbar .logo-name .purple-name {
+    color: var(--purpleClr);
+}
+
+.navbar .links-section {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.navbar .links-section li {
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    font-size: 1.1rem;
+    margin: 0 1.7rem;
+}
+
+.navbar .links-section li a {
+    color: var(--whiteClr);
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+.navbar .links-section li a:hover {
+    color: var(--purpleClr);
+}

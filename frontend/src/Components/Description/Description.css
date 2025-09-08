@@ -1,0 +1,39 @@
+/************ Description Css ************/
+
+.description {
+    padding: 4rem 10%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+}
+
+.description .description-desc {
+    align-self: center;
+}
+
+.description .description-img {
+    overflow: hidden;
+}
+
+.description .description-img img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.description .description-desc .title {
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--whiteClr);
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.description .description-desc .para {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--whiteClr);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}

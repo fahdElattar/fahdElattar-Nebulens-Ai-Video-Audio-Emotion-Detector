@@ -1,0 +1,95 @@
+/************ Home Css ************/
+
+.home {
+    width: 100%;
+    padding: 0 10%;
+    margin-top: 40px;
+    margin-bottom: 10rem;
+    height: 220px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home .left {
+    position: relative;
+    width: 10%;
+}
+
+.home .left img {
+    position: absolute;
+    left: 5rem;
+    border-radius: 10px;
+    width: 7.5rem;
+    transform: rotate(-20deg);
+    background-position: cover;
+    box-shadow: -7px 10px 20px var(--purpleClr);
+}
+
+.home .center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+}
+
+.home .center .title {
+    color: var(--whiteClr);
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 3.3rem;
+    margin-bottom: 1.4rem;
+    text-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.home .center .para {
+    max-width: 390px;
+    margin: 0 auto;
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.home .center .select-btn {
+    width: auto;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    background-color: var(--purpleClr);
+    outline: none;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--whiteClr);
+}
+
+.home .center .select-btn .plus {
+    color: var(--whiteClr);
+    margin-right: .3rem;
+}
+
+.home .right {
+    position: relative;
+    width: 10%;
+}
+
+.home .right img {
+    position: absolute;
+    left: -5rem;
+    top: -8rem;
+    border-radius: 10px;
+    width: 8.5rem;
+    transform: rotate(20deg);
+    background-position: cover;
+    box-shadow: -7px 10px 20px #aad9d996;
+}

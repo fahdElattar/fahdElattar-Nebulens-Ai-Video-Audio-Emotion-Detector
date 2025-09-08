@@ -1,5 +1,5 @@
-import React from 'react'
-import emotions_graph from '../assets/img/emotions_graph.svg'
+import emotions_graph from '../../assets/img/emotions_graph.svg'
+import "./Description.css"
 
 const Description = () => {
   return (

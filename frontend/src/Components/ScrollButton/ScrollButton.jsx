@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import "./ScrollButton.css"
 
 const ScrollButton = () => {
   const [isVisible, setIsVisible] = useState(false);

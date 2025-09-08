@@ -1,6 +1,6 @@
-import React from 'react'
-import angry_person from '../assets/img/person_angry.jpeg'
-import smiling_person from '../assets/img/person_smiling.png'
+import angry_person from '../../assets/img/person_angry.jpeg'
+import smiling_person from '../../assets/img/person_smiling.png'
+import "./Home.css"
 
 const Home = () => {
   

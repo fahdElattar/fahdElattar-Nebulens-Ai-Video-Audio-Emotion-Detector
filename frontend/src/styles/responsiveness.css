@@ -1,0 +1,72 @@
+/************ responsive Css ************/
+
+@media (max-width: 1013px){
+    
+    .home .left img {
+        display: none;
+        transition: .1s ease-in;
+    }
+
+    .home .right img {
+        display: none;
+        transition: .1s ease-in;
+    }
+    
+}
+
+@media (max-width: 916px){
+
+    .steps .body {
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
+
+    .steps .body .card {
+        justify-self: center;
+        max-width: 350px;
+    }
+
+    .steps .body .card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 850px){
+    .process, .about, .description {
+        grid-template-columns: 1fr;
+    }
+    .navbar .links-section {
+        display: none;
+        position: relative;
+    }
+}
+
+@media (max-width: 732px){
+    .footer .rights {
+        display: none;
+    }
+}
+
+@media (max-width: 609px){
+    .home .center .title {
+        font-weight: 700;
+        font-size: 2.8rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+@media (max-width: 519px){
+    .footer {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 489px){
+    .steps {
+        padding-inline: 2rem;
+    }
+    .home .center .title {
+        font-size: 2.2rem;
+    }
+}

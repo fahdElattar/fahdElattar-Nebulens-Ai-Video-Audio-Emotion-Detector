@@ -1,5 +1,5 @@
-import React from 'react'
-import galaxy_icon from '../assets/img/galaxy_icon.svg'
+import galaxy_icon from '../../assets/img/galaxy_icon.svg'
+import "./Navbar.css"
 
 const Navbar = () => {
   

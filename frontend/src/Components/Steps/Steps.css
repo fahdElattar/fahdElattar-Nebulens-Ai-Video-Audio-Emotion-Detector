@@ -1,0 +1,123 @@
+/************ Steps Css ************/
+
+.steps {
+    margin: 0 auto 3rem;
+    color: var(--whiteClr);
+    padding: 2.5rem 4rem;
+}
+
+.steps .header {
+    text-align: center;
+    margin-bottom: 6.1rem;
+}
+
+.steps .header .small-title {
+    color: var(--skyBlueClr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.steps .header .title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 3.1rem;
+    text-transform: capitalize;
+}
+
+.steps .body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 auto 3rem;
+    max-width: 1050px;
+}
+
+.steps .body .card {
+    background: var(--lightDarkBlueClr);
+    text-align: center;
+    padding: 4rem 1rem 3rem;
+    border-radius: 12px;
+    position: relative;
+    box-shadow: -2px 5px 21px 0px #ffffff33;
+    transition: all .3s ease-in;
+    cursor: pointer;
+}
+
+.steps .body .card:hover {
+    transform: translateY(-10px);
+}
+
+.steps .body .card .card-header {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3.4rem;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--purpleClr);
+    border-radius: 50%;
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.steps .body .card .card-body .card-name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    margin: 1.5rem 0 1rem;
+    overflow: hidden;
+    color: var(--whiteClr);
+}
+
+.steps .body .card .card-body .card-desc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
+    max-width: 240px;
+    padding-inline: .5rem;
+    margin: 0 auto;
+    line-height: 1.3rem;
+    overflow: hidden;
+    color: var(--whiteClr);
+}
+
+.steps .steps-footer {
+    width: 100%;
+    margin-top: 4.7rem;
+    text-align: center;
+}
+
+.steps .steps-footer .try-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--skyBlueClr) 0%, var(--skyBlueClr) 30%, var(--purpleClr) 60%);
+    color: var(--blackClr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 13px;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .3s ease-in;
+}
+
+.steps .steps-footer .try-btn:active {
+    transform: scale(98%);
+}

@@ -1,0 +1,179 @@
+/************ Process Css ************/
+
+.process {
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+    padding: 4rem 10%;
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2rem;
+    color: var(--whiteClr);
+}
+
+.process .process-img {
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    background-image: url('../../assets/img/gray_white_bg.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    border-radius: 21px;
+    box-shadow: -2px 5px 21px 0px #aad9d994;
+}
+
+.process .process-img img {
+    width: 100%;
+    height: 20rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 21px;
+    box-shadow: -2px 5px 21px 0px #aad9d994;
+}
+
+.process .process-img label {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.05rem;
+    background-color: var(--purpleClr);
+    color: var(--whiteClr);
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    z-index: 69;
+    box-shadow: -2px 5px 21px 0px hsla(0, 0%, 0%, 0.459);
+    transition: .3 ease-in;
+}
+
+.process .process-img label:active {
+    transform: scale(98%);
+}
+
+.process .process-desc {
+    color: var(--whiteClr);
+    align-self: center;
+}
+
+.process .process-desc .small-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--skyBlueClr);
+    font-size: 1em;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+}
+
+.process .process-desc .title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: var(--whiteClr);
+    font-size: 2em;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.process .process-desc .duration {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--whiteClr);
+    margin-bottom: 1rem;
+}
+
+.process .process-desc .para {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: var(--whiteClr);
+    margin-bottom: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.process .process-desc .para .output{
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.process .process-desc .action-btns {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.predict-btn, .delete-btn {
+    width: 12rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    border-radius: 13px;
+    padding: 1.2rem 3.5rem;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: var(--whiteClr);
+    margin-right: 1rem;
+    transition: .1 ease-in;
+}
+
+.predict-btn {
+    border: 2px solid var(--purpleClr);
+}
+
+.delete-btn {
+    border: 2px solid var(--skyBlueClr);
+}
+
+.predict-btn:active, .delete-btn:active {
+    transform: scale(0.98);
+}
+
+.process .card {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    position: fixed;
+    right: 0;
+    top: 10%;
+    padding: 2rem 3.3rem 2rem 3.9rem;
+    text-align: center;
+    z-index: 99;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+}
+
+.process .card::after {
+    content: '';
+    position: absolute;
+    background-color: var(--darkBlueClr);
+    left: -1.9rem;
+    top: 15%;
+    width: 3.7rem;
+    height: 3.7rem;
+    transform: rotate(45deg);
+}
+
+.process .card.alert {
+    background-color: red;
+}
+
+.process .card.success {
+    background-color: rgb(3, 182, 3);
+}
+
+.slide-in {
+    transform: translateX(0);
+}
+
+.slide-out {
+    transform: translateX(100%);
+}

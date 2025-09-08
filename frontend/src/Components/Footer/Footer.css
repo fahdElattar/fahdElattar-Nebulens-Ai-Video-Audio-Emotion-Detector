@@ -1,0 +1,38 @@
+/************ Footer Css ************/
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4.5rem 10%;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 40%, #000 100%);
+    color: var(--whiteClr);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: transparent;
+}
+
+.footer .logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo-section .logo-icon {
+    color: var(--whiteClr);
+    width: 3rem;
+    margin-right: 1.1rem;
+    transform: rotate(12deg);
+}
+
+.footer .logo-section .logo-name {
+    color: var(--whiteClr);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.footer .logo-name .purple-name {
+    color: var(--purpleClr);
+}

@@ -1,5 +1,6 @@
-import React from 'react'
-import face_detection from '../assets/img/face_detection.svg'
+import face_detection from '../../assets/img/face_detection.svg'
+import "./About.css"
+
 const About = () => {
   return (
     <div className='about' id='About'>
