@@ -1,5 +1,4 @@
 import './styles/App.css';
-import './styles/responsiveness.css';
 import './styles/reusable.css';
 
 import About from './Components/About/About';

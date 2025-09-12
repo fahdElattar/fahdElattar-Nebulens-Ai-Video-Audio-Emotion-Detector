@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import "./Process.css"
+import '../../styles/App.css';
 
 const Process = () => {
   const [videoFile, setVideoFile] = useState(null);

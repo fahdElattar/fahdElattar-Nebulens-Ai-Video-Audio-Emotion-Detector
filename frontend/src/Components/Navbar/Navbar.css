@@ -55,3 +55,10 @@
 .navbar .links-section li a:hover {
     color: var(--purpleClr);
 }
+
+@media (max-width: 850px){
+    .navbar .links-section {
+        display: none;
+        position: relative;
+    }
+}

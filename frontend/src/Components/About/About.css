@@ -32,3 +32,10 @@
     margin-bottom: 2rem;
     line-height: 1.6rem;
 }
+
+
+@media (max-width: 850px){
+    .about {
+        grid-template-columns: 1fr;
+    }
+}

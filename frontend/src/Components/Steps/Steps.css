@@ -121,3 +121,23 @@
 .steps .steps-footer .try-btn:active {
     transform: scale(98%);
 }
+
+@media (max-width: 916px){
+    .steps .body {
+        grid-template-columns: 1fr;
+        gap: 6rem;
+    }
+    .steps .body .card {
+        justify-self: center;
+        max-width: 350px;
+    }
+    .steps .body .card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 489px){
+    .steps {
+        padding-inline: 2rem;
+    }
+}

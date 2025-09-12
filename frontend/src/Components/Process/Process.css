@@ -177,3 +177,9 @@
 .slide-out {
     transform: translateX(100%);
 }
+
+@media (max-width: 850px){
+    .process {
+        grid-template-columns: 1fr;
+    }
+}
